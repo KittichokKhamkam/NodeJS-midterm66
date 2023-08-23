@@ -11,7 +11,7 @@ require('./route')(app)
 app.get('/status', function (req,res){
     let x = 2;
     const que1 = x++;
-    console.log(que1)
+    console.log('que1: ' + x)
 })
 
 app.get('/status2', function (req,res){
@@ -28,7 +28,7 @@ app.get('/status2', function (req,res){
         return x;
       }
       
-      console.log(que2(3, 2));
+      console.log('que2: ' + que2(2, 2));
 })
 
 
